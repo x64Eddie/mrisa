@@ -179,7 +179,7 @@ def main():
     args = parser.parse_args()
 
     if args.debug:
-        app.debug = True
+        app.debug = True       
 
     if args.cors:
         CORS(app, resources=r'/search/*')
